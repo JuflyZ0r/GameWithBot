@@ -15,14 +15,14 @@ public class Main {
             System.out.println("Я число загадав , тепер ти маєш вгадать ");
             System.out.println("Це число бота , щоб показав, що ок все )" + botNumber);
             boolean game = true;
-            while (game == true){
+            while (game){
                 int meNumber = scanner.nextInt();
-                if (meNumber == botNumber){
-                    System.out.println("Ти вгадав! Молодець");
-                    game = false;
-                } else if (meNumber != botNumber) {
-                    System.out.println("Продовжуй вгадувати!");
+                if (meNumber != botNumber){
+                    System.out.println("Не вірно! Продовжуй вгадувати!");
+                    continue;
                 }
+                System.out.println("Ти вгадав");
+                break;
             }
 
 

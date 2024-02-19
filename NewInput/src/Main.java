@@ -9,7 +9,7 @@ public class Main {
         int answer = scanner.nextInt();
         switch (answer){
             case 1:
-                Game.playGame(scanner);
+                Gameasdasd.playGame(scanner);
                 break;
             case 2:
                 Game.exit();
